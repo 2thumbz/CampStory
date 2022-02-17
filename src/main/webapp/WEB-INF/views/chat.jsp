@@ -15,7 +15,7 @@
   <textarea id="messageTextArea" rows="25" cols="30"  class="chat_textArea"></textarea>
   <script  src="http://code.jquery.com/jquery-latest.min.js"></script>
   <script type="text/javascript">
-    var webSocket = new WebSocket("ws://localhost:8080/broadsocket");
+    var webSocket = new WebSocket("ws://192.168.0.9:8080/broadsocket");
     var messageTextArea = document.getElementById("messageTextArea");
     webSocket.onopen = function(message) {
       messageTextArea.value += "Welcom CampStory...\n";

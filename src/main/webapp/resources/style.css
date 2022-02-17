@@ -290,6 +290,7 @@
     #loginbtn, #logoutbtn {
         width: 100px;
         height: 40px;
+       	margin: auto;
         vertical-align : bottom;
         text-align: center;
        	border: 0;
@@ -1496,4 +1497,17 @@
 		margin-bottom : 15px;
 		
 	}	
-		
+	.no_result_tbl {
+		width : 300px;
+		margin:auto;
+		margin-top : 90px;
+		margin-bottom : 140px;
+		text-align: center;
+		font-size: x-large;
+		font-weight: bold;
+	}
+	
+	.talkList_idbox {
+		width: 100px;
+		margin: auto;
+	}	

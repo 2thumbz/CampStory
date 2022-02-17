@@ -111,19 +111,21 @@
 </table>
 </div>
 
-  <c:if test="${searchcount == 0}">
-<table width="700" border="1" cellpadding="0" cellspacing="0">
-  <tr>
-    <td align="center">
-      등록된 캠핑장이 없습니다.
-    </td>
-  </tr>
-</table>
-</c:if>
-    
+  
+  
  <br/>
 <hr color="#DFD8CA" size="2"  align="center" />
+<c:if test="${searchcount == 0}">
+	<table class="no_result_tbl">
+	  <tr>
+	    <td align="center">
+	      등록된 캠핑장이 없습니다.
+	    </td>
+	  </tr>
+	</table>
+</c:if>
 
+<c:if test="${searchcount != 0}">
 <div class="sortbox">
 	<b>캠핑장 리스트 (전체 캠핑장:${searchcount })</b>
 		<section class="sortsection"> 
@@ -238,7 +240,8 @@
 </c:if>
 </div>
 <br/>
-</center>
+</c:if>
+
 </body>
 <%@ include file = "../include/footer.jsp" %>
 
