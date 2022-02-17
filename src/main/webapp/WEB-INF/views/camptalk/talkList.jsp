@@ -232,7 +232,7 @@
 					</c:if>
 				</td>
 				
-				<td> 
+				<td class="talkList_idbox"> 
 					<c:if test="${dto.ano == 'id'}">
 						<strong>${dto.writer}</strong>
 					</c:if> 
